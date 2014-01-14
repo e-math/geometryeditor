@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+		<title>Geometryeditor</title>
+		<script type="text/javascript" src="data/js/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="data/js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="mathquill/mathquill.js"></script>
+		
+		<script type="text/javascript" src="data/js/jsxgraphcore.js"></script>
+		<script type="text/javascript" src="data/js/JessieScript.js"></script>
+		<script type="text/javascript" src="data/js/calculator.js"></script>
+
+		<script type="text/javascript" src="data/js/geoeditor.js"></script>
+		<link type="text/css" href="mathquill/mathquill.css" rel="stylesheet" />
+		<link type="text/css" href="data/css/jsxgraph.css" rel="stylesheet" />
+		<link type="text/css" href="data/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+	        <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+
+
+		<script type="text/javascript">
+			// For the major convinience it provides :)
+			
+			$(document).ready(function() { $('div#placeholder').geoeditor({'mode' : 'full'}); }	);
+
+		</script>
+		<style>
+			bodya {
+				background: #fff;
+				padding: 0;
+				margin: 20px;
+				/*overflow: hidden;*/
+				font: 14px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+				font-family: 'Junction';
+				font-weight: normal;
+				/*font-size: 20px;*/
+				letter-spacing: -.05em;
+				line-height: 1.34em;
+				color: white;        
+				color: black;
+				text-shadow: rgba(255, 255, 255, 0.2) 0 2px 5px;  
+			}
+		</style>    
+	</head>
+	<body>
+		<header>
+		    <div id="head-content">
+			<img id="logo" src="images/emath-logo.png" alt="E-Math" />
+		        <h1>Geometry Editor v.0.10</h1>
+			<h2>Create geometric constructions</h2>
+		    </div>
+		</header>
+        <a href="https://github.com/e-math/geometryeditor"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+	        <article class="content">
+			<div style="width: 100%; margin-top: 30px">
+				<!-- <a href="javascript:openGeoEditor();">Avaa editori</a> -->
+				<div id="placeholder" style="
+					display:block;
+					background-color:#fcfcfc;
+					padding:20px;
+					border-style:dashed;
+					border-width: 1px;
+					border-color: #ccc;">
+				</div>
+				<!--
+				<div id="placeholder2" style="
+					display:inline-flex;
+					background-color:#fcfcfc;
+					padding:20px;
+					border-style:dashed;
+					border-width: 1px;
+					border-color: #ccc;">
+				</div>
+				-->
+			</div>
+			<div style="
+				font-size:30px;
+				margin-top : -3px;
+				margin-right : 30px;
+				color : 404040;
+				-moz-transform: scale(-1, 1);
+				-webkit-transform: scale(-1, 1);
+				transform: scale(-1, 1);
+			">&#9987;</div>
+		</article>
+		<footer>
+		    <div id="disclaimerbox">
+			<div id="leftlogo">
+			    <img src="images/CB_logo-200.png" alt="" />
+			</div>
+			<div id="rightlogo">
+			    <img src="images/EU_with_references-300.png" alt="" />
+			</div>
+			<div id="disclaimer">
+			    The contents of the website reflect the authors' views. The Managing Authority of the Central Baltic INTERREG IVA Programme cannot be held liable for the information published by the project partners. 
+			</div>
+		    </div>
+		</footer>
+	</body>
+</html>
